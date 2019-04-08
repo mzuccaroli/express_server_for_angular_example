@@ -1,0 +1,5 @@
+{
+  "name": "frontend-server",
+  "script": "server-s3.js",
+  "instances": "1"
+}

@@ -1,0 +1,10 @@
+.idea
+.DS_Store
+.vscode
+
+# Built #
+/node_modules/
+
+# Node #
+*.log
+/npm-debug.log.*
