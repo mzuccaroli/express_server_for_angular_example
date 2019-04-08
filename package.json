@@ -1,11 +1,11 @@
 {
   "name": "colombini-frontend-server",
   "version": "1.0.0",
-  "description": "colombini fromntend server with prerender.io token and s3 bucket distribution",
+  "description": "frontend server with s3 bucket distribution",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/innoteam/FILLME.git"
+    "url": "https://github.com/mzuccaroli/express_server_for_angular_example"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,6 @@
     "express": "^4.16.4",
     "express-rate-limit": "^3.4.0",
     "memory-cache": "^0.2.0",
-    "prerender-node": "^3.2.1",
     "request": "^2.88.0"
   }
 }
