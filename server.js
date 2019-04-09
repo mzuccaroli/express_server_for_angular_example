@@ -13,7 +13,7 @@ app.use(compression());
 app.server.get('*.*', express.static(_app_folder, {maxAge: '1y'}));
 
 // ---- SERVE APLICATION PATHS ---- //
-app.all('*', cache.getCache(), function (req, res) {
+app.all('*', function (req, res) {
     res.status(200).sendFile(`/`, {root: _app_folder});
 });
 
