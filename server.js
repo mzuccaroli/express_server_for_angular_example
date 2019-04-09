@@ -36,7 +36,7 @@ if (_environment === 'production') {
 }
 
 // ---- SERVE SITEMAPS.XML FROM A DEDICATED API ---- //
-app.all('*.xml', cache.getCache(), function (req, res) {
+app.all('*.xml', function (req, res) {
     // we need to redirect the sitemap request directly to the backend
     const options = {
         url: _apiAddress + req.url,
