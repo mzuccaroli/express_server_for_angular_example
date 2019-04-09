@@ -25,7 +25,7 @@ if (_environment === 'production') {
 }
 
 // ---- SERVE SITEMAPS.XML FROM A DEDICATED API ---- //
-app.all('*.xml', cache.getCache(), function (req, res) {
+app.all('*.xml', function (req, res) {
     // we need to redirect the sitemap request directly to the backend
     const options = {
         url: _apiAddress + req.url,
@@ -43,7 +43,7 @@ app.all('*.(js|css|ttf|svg|png|jpg|jpeg|ico|woff2|woff|txt|html)', function (req
 });
 
 // ---- SERVE APLICATION PATHS FROM A BUCKET ---- //
-app.all('*', cache.getCache(), function (req, res) {
+app.all('*', function (req, res) {
     //here you can manage things like language folder for example: url = _bucketAddress+'/en'
     request(_bucketAddress).pipe(res);
 });
